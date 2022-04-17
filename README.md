@@ -19,8 +19,7 @@ O Resultado do layout ficou incrível, usei as cores de forma correta trazendo u
 
 ## Fotos da aplicação
 
-![image](https://user-images.githubusercontent.com/83486074/163698305-750c7d24-b5d6-460f-a5a9-a48b9ffa59a3.png)
-![image](https://user-images.githubusercontent.com/83486074/163698330-14a7329c-5fb8-448c-909a-69fced90b199.png)
+![image](https://user-images.githubusercontent.com/83486074/163698440-a76a0c0d-df0b-48f7-a562-19b58770e93e.png)
 
 ## Como executar a aplicação
 
