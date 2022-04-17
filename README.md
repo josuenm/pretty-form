@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Pretty-Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse é mais um desafio da Supera, foi pedido que eu fizesse um formulário usando React Hook Form.
 
-## Available Scripts
+## Ferramentas e frameworks usados
 
-In the project directory, you can run:
+- ReactJS
+- Styled Components
+- React Hook Form
+- Yup
 
-### `yarn start`
+## Resultado
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Por conta do tempo corrido eu não consegui terminar 100% da aplicação, teria que aprender mais sobre o React Hook Form, eu já tive experiência com ele uma vez junto com o Yup, mas nunca usei para checkbox e selects. Com toda certeza eu vou chegar ao final desta aplicação por questão de conhecimento.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O Resultado do layout ficou incrível, usei as cores de forma correta trazendo um layout simples e moderno, sem precisar usar alguma bilbioteca de interface declarativa.
 
-### `yarn test`
+## Fotos da aplicação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/83486074/163698305-750c7d24-b5d6-460f-a5a9-a48b9ffa59a3.png)
+![image](https://user-images.githubusercontent.com/83486074/163698330-14a7329c-5fb8-448c-909a-69fced90b199.png)
 
-### `yarn build`
+## Como executar a aplicação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Primeiramente clone o projeto através do `git` ou você pode baixá-lo clicando no link a seguir https://github.com/josuenm/pretty-form/archive/refs/heads/main.zip
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Após você estar com o repositório em sua pasta abra a pasta no seu terminal e execute `npm install` ou `yarn` para baixar as dependências necessárias.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+E após fazer isso você pode rodar o comando `npm start` ou `yarn start` e a aplicação abrirá em seu navegador padrão
