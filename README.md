@@ -18,6 +18,12 @@ Sobre o código eu achei que ficou super organizado e bem facil de entender. Foi
 
 ![image](https://user-images.githubusercontent.com/83486074/163698440-a76a0c0d-df0b-48f7-a562-19b58770e93e.png)
 
+## Deploy 🏡
+
+O deploy foi feito via Firebase Hosting
+
+Acesse: https://pretty-form.web.app
+
 ## Como executar a aplicação
 
 Primeiramente clone o projeto através do `git` ou você pode baixá-lo clicando no link a seguir https://github.com/josuenm/pretty-form/archive/refs/heads/main.zip
