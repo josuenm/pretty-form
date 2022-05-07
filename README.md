@@ -16,7 +16,7 @@ Sobre o código eu achei que ficou super organizado e bem facil de entender. Foi
 
 ## Fotos da aplicação
 
-![image](https://user-images.githubusercontent.com/83486074/163698440-a76a0c0d-df0b-48f7-a562-19b58770e93e.png)
+![image](https://user-images.githubusercontent.com/83486074/167237366-2ecdbc31-5131-432a-8cab-78bdbbd38df2.png)
 
 ## Deploy 🏡
 
