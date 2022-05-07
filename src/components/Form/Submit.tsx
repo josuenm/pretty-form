@@ -5,7 +5,6 @@ import { SubmitButton } from "./styles";
 
 interface SubmitProps {
     title: string; 
-    onClick: () => void;
 }
 
 

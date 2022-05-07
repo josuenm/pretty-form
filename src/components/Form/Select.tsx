@@ -1,15 +1,32 @@
-import React, { Dispatch, SetStateAction } from "react";
-import { Container, LabelContainer, SelectProvider, SelectContainer, OptionContainer, Arrows, Error } from "./styles";
+import React from "react";
+import { ChangeHandler, FieldError, RefCallBack } from "react-hook-form";
+import { 
+    Container,
+    LabelContainer, 
+    SelectProvider, 
+    SelectContainer, 
+    OptionContainer, 
+    Arrows, 
+    Error 
+} from "./styles";
 
+
+
+
+type RegisterProps = {
+    name: string;
+    onBlur: ChangeHandler;
+    onChange: ChangeHandler;
+    ref: RefCallBack;
+}
 
 
 interface SelectProps {
     options: string[];
     name: string;
     label?: string;
-    error: boolean;
-    gender: string;
-    setGender: Dispatch<SetStateAction<string>>;
+    error?: FieldError | undefined;
+    register: RegisterProps;
 }
 
 
@@ -17,11 +34,8 @@ export function Select({
     options,
     name,
     label = "",
-    gender,
-    setGender,
     error,
-    ...rest
-
+    register
 }: SelectProps) {
     return (
         <Container>
@@ -32,18 +46,17 @@ export function Select({
             <SelectProvider>
                 <SelectContainer 
                     id={name} 
-                    className={!!error ? "error" : ""}
-                    onChange={(e) => setGender(e.target.value)}
-                    {...rest}>
+                    className={!!error ? "error" : ""} 
+                    {...register}>
 
-                    <OptionContainer value="">
-                        Selecione um gênero
+                    <OptionContainer>
+                        --Selecione um gênero--
                     </OptionContainer>
 
-                    {options.map((item, index) => (
+                    {options.map((item) => (
                         <OptionContainer 
-                            key={index} 
-                            value={item} >
+                            key={item} 
+                            value={item}>
 
                             {item}
 

@@ -190,6 +190,10 @@ export const CheckboxInput = styled.input`
     justify-content: center;
     align-items: center;
     
+    &.error {
+        border: 1px solid ${({ theme }) => theme.colors.error};
+    }
+
     transition: ease .4s all;
     &:hover {
         border: 1px solid ${({ theme }) => theme.colors.primary};

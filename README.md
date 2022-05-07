@@ -1,6 +1,6 @@
 # Pretty-Form
 
-Esse é mais um desafio da Supera, foi pedido que eu fizesse um formulário usando React Hook Form.
+Esse é mais um desafio da Supera, foi pedido que eu fizesse um formulário usando React Hook Form e que se o formulário foi preenchido, ele deve ser salvo em local storage e recuperado na inicialização da aplicação.
 
 ## Ferramentas e frameworks usados
 
@@ -11,11 +11,8 @@ Esse é mais um desafio da Supera, foi pedido que eu fizesse um formulário usan
 
 ## Resultado
 
-Por conta do tempo corrido eu não consegui terminar 100% da aplicação, teria que aprender mais sobre o React Hook Form, eu já tive experiência com ele uma vez junto com o Yup, mas nunca usei para checkbox e selects. Com toda certeza eu vou chegar ao final desta aplicação por questão de conhecimento.
-
-Eu fiz essa aplicação por cerca de 4 horas, ainda tem muita margem para melhoras.
-
 O Resultado do layout ficou incrível, usei as cores de forma correta trazendo um layout simples e moderno, sem precisar usar alguma bilbioteca de interface declarativa.
+Sobre o código eu achei que ficou super organizado e bem facil de entender. Foi usado o React Hook Form e o Yup que é uma recomendação do próprio React Hook Form e serve para tratar os erros de forma simples.
 
 ## Fotos da aplicação
 

@@ -1,12 +1,20 @@
-import React from "react";
+import { ChangeHandler, FieldError, RefCallBack } from "react-hook-form";
 import { Container, LabelContainer, InputContainer, Error } from "./styles";
 
 
-type ErrorProps = {
-    type: string;
-    message: string;
-    ref: any;
+
+
+
+
+
+
+type RegisterProps = {
+    name: string;
+    onBlur: ChangeHandler;
+    onChange: ChangeHandler;
+    ref: RefCallBack;
 }
+
 
 
 interface InputProps {
@@ -14,17 +22,23 @@ interface InputProps {
     name: string;
     label?: string;
     placeholder?: string;
-    error?: ErrorProps;
+    error?: FieldError | undefined;
+    register: RegisterProps;
 }
 
-export const Input = React.forwardRef(({
+
+
+export function Input({
     type,
     name,
     label = "",
     placeholder,
     error,
-    ...rest
-}: InputProps, ref: any) => {
+    register,
+}: InputProps) {
+
+
+
 
     return (
         <Container>
@@ -36,12 +50,10 @@ export const Input = React.forwardRef(({
                 type={type} 
                 placeholder={placeholder} 
                 id={name} 
-                ref={ref}
-                className={!!error ? "error" : ""}
-                {...rest}
-            />
+                className={!!error ? "error" : ""} 
+                {...register} />
 
             {!!error && <Error>{error.message}</Error>}
         </Container>
     )
- })
+}

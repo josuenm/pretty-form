@@ -1,26 +1,39 @@
 import React from "react";
-import { Container, LabelContainer, CheckboxProvider, CheckboxName, CheckboxInput, Error } from "./styles";
+import { ChangeHandler, FieldError, RefCallBack } from "react-hook-form";
+import { 
+    Container, 
+    LabelContainer, 
+    CheckboxProvider, 
+    CheckboxName, 
+    CheckboxInput, 
+    Error 
+} from "./styles";
 
 
+type RegisterProps = {
+    name: string;
+    onBlur: ChangeHandler;
+    onChange: ChangeHandler;
+    ref: RefCallBack;
+}
 
 
 interface CheckboxProps {
     options: string[];
     label?: string;
-    control: any;
-    error: boolean;
-    area: string;
-    setArea: (value: string) => void;
+    name: string;
+    error?: FieldError | undefined;
+    register: RegisterProps;
 }
+
+
 
 export function Checkbox({
     options,
     label = "",
-    control,
-    area,
-    setArea,
     error,
-    ...rest
+    name,
+    register
 }: CheckboxProps) {
     return (
         <Container>
@@ -29,18 +42,17 @@ export function Checkbox({
             )}
 
             {options.map((item, index) => (
-                <CheckboxProvider key={index}>
-                    <CheckboxName htmlFor={item}>
+                <CheckboxProvider key={index} id={name}>
+                    <CheckboxName htmlFor={name}>
                         {item}
                     </CheckboxName>
 
                     <CheckboxInput 
-                        value={item}
-                        checked={area === item}
-                        onChange={() => setArea(item)}
                         type="checkbox" 
-                        id={item}
-                        {...rest} />
+                        value={item}
+                        id={item} 
+                        className={!!error ? "error" : ""} 
+                        {...register} />
                 </CheckboxProvider>
             ))}
 
